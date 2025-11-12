@@ -38,6 +38,7 @@ using std::endl;
 #include "solverconf.h"
 #include "cryptominisat.h"
 #include "dimacsparser.h"
+#include "anfparser.h"
 
 #if defined(_MSC_VER)
 #pragma warning(push)
@@ -69,7 +70,7 @@ public:
     void printUsage(const char** argv)
     {
         cout << "Usage: "
-        << argv[0] << " [options] <input-file> where input is plain DIMACS.\n";
+        << argv[0] << " [options] <input-file> where input is plain DIMACS or ANF.\n";
         cout << "Options:\n";
         cout << "  --verb          = [0...]  Sets verbosity level. Anything higher\n";
         cout << "                            than 2 will give debug log\n";
@@ -77,6 +78,14 @@ public:
         cout << "  --sls           = {walksat,yalsat} Which SLS solver to use\n";
         cout << "  --threads       = [1...]  Sets number of threads\n";
         cout << "\n";
+    }
+    
+    bool is_anf_file(const char* filename)
+    {
+        if (!filename) return false;
+        const char* ext = strrchr(filename, '.');
+        if (!ext) return false;
+        return (strcmp(ext, ".anf") == 0 || strcmp(ext, ".ANF") == 0);
     }
 
     const char* hasPrefix(const char* str, const char* prefix)
@@ -186,34 +195,73 @@ public:
             gzclose(in);
             #endif
         } else {
-            #ifndef USE_ZLIB
-            FILE* in = fopen(argv[1], "rb");
-            #else
-            gzFile in = gzopen(argv[1], "rb");
-            #endif
+            bool is_anf = is_anf_file(argv[1]);
+            
+            if (is_anf) {
+                if (conf.verbosity) {
+                    cout << "c Using direct ANF parser for file: " << argv[1] << "\n";
+                }
+                
+                #ifndef USE_ZLIB
+                FILE* in = fopen(argv[1], "rb");
+                #else
+                gzFile in = gzopen(argv[1], "rb");
+                #endif
 
-            if (in == NULL) {
-                std::cout << "ERROR! Could not open file: ";
-                std::cout << argv[1] << " reason: " << strerror(errno);
-                std::cout << std::endl;
-                std::exit(1);
+                if (in == NULL) {
+                    std::cout << "ERROR! Could not open file: ";
+                    std::cout << argv[1] << " reason: " << strerror(errno);
+                    std::cout << std::endl;
+                    std::exit(1);
+                }
+
+                #ifndef USE_ZLIB
+                ANFParser<StreamBuffer<FILE*, FN>, SATSolver> anf_parser(solver, conf.verbosity);
+                if (!anf_parser.parse_ANF(in)) {
+                    exit(-1);
+                }
+                #else
+                ANFParser<StreamBuffer<gzFile, GZ>, SATSolver> anf_parser(solver, conf.verbosity);
+                if (!anf_parser.parse_ANF(in)) {
+                    exit(-1);
+                }
+                #endif
+
+                #ifndef USE_ZLIB
+                fclose(in);
+                #else
+                gzclose(in);
+                #endif
+            } else {
+                #ifndef USE_ZLIB
+                FILE* in = fopen(argv[1], "rb");
+                #else
+                gzFile in = gzopen(argv[1], "rb");
+                #endif
+
+                if (in == NULL) {
+                    std::cout << "ERROR! Could not open file: ";
+                    std::cout << argv[1] << " reason: " << strerror(errno);
+                    std::cout << std::endl;
+                    std::exit(1);
+                }
+
+                #ifndef USE_ZLIB
+                DimacsParser<StreamBuffer<FILE*, FN>, SATSolver> parser(solver, NULL, conf.verbosity);
+                #else
+                DimacsParser<StreamBuffer<gzFile, GZ>, SATSolver> parser(solver, NULL, conf.verbosity);
+                #endif
+
+                if (!parser.parse_DIMACS(in, false)) {
+                    exit(-1);
+                }
+
+                #ifndef USE_ZLIB
+                fclose(in);
+                #else
+                gzclose(in);
+                #endif
             }
-
-            #ifndef USE_ZLIB
-            DimacsParser<StreamBuffer<FILE*, FN>, SATSolver> parser(solver, NULL, conf.verbosity);
-            #else
-            DimacsParser<StreamBuffer<gzFile, GZ>, SATSolver> parser(solver, NULL, conf.verbosity);
-            #endif
-
-            if (!parser.parse_DIMACS(in, false)) {
-                exit(-1);
-            }
-
-            #ifndef USE_ZLIB
-            fclose(in);
-            #else
-            gzclose(in);
-            #endif
         }
 
         double parse_time = cpuTime() - cpu_time;

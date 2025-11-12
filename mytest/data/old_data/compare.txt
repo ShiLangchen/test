@@ -1,0 +1,88 @@
+c Total time (this thread) : 94.78       
+after
+c Total time (this thread) : 96.18       
+origin
+c Total time (this thread) : 226.06      
+after
+c Total time (this thread) : 229.55      
+origin
+c Total time (this thread) : 115.36      
+after
+c Total time (this thread) : 119.76      
+origin
+c Total time (this thread) : 166.48      
+origin
+c Total time (this thread) : 168.75      
+after
+c Total time (this thread) : 293.86      
+after
+c Total time (this thread) : 294.40      
+origin
+c Total time (this thread) : 89.33       
+after
+c Total time (this thread) : 90.38       
+origin
+c Total time (this thread) : 44.71       
+after
+c Total time (this thread) : 45.08       
+origin
+c Total time (this thread) : 17.36       
+after
+c Total time (this thread) : 36.28       
+origin
+c Total time (this thread) : 12.87       
+origin
+c Total time (this thread) : 21.42       
+after
+c Total time (this thread) : 66.51       
+after
+c Total time (this thread) : 112.86      
+origin
+c Total time (this thread) : 5.47        
+origin
+c Total time (this thread) : 79.67       
+after
+c Total time (this thread) : 33.16       
+origin
+c Total time (this thread) : 71.35       
+after
+c Total time (this thread) : 37.30       
+origin
+c Total time (this thread) : 50.64       
+after
+c Total time (this thread) : 17.05       
+after
+c Total time (this thread) : 116.05      
+origin
+c Total time (this thread) : 18.55       
+after
+c Total time (this thread) : 141.74      
+origin
+c Total time (this thread) : 43.26       
+after
+c Total time (this thread) : 211.06      
+origin
+c Total time (this thread) : 17.47       
+after
+c Total time (this thread) : 275.72      
+origin
+c Total time (this thread) : 21.05       
+after
+c Total time (this thread) : 124.50      
+origin
+c Total time (this thread) : 90.24       
+origin
+c Total time (this thread) : 97.99       
+after
+c Total time (this thread) : 68.13       
+origin
+c Total time (this thread) : 207.67      
+after
+c Total time (this thread) : 95.01       
+after
+c Total time (this thread) : 114.05      
+origin
+c Total time (this thread) : 89.39       
+origin
+c Total time (this thread) : 190.80      
+after

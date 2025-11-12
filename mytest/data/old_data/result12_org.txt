@@ -1,0 +1,65 @@
+c [find&init matx] performing matrix init
+c [gauss] XOR-encoding clauses are not detached, so no need to reattach them.
+c [xor-rem-unconnected] left with 12 xors from 12 non-empty xors T: 0.00
+c [xor-together] xored together: 0 orig xors: 12 new xors: 12 T: 0.00
+c [xor-rem-unconnected] left with 12 xors from 12 non-empty xors T: 0.00
+c [xor-clean-equiv] removed equivalent xors: 0 left with: 12
+c [matrix] unused xors from cleaning: 0
+c [matrix] Good   matrix  0     12 x   78  density:0.4252  xorlen avg: 33.17
+c [matrix] Using 1 matrices recovered from 0 xors T: 0.00 T-out: N
+c [gauss] XOR-encoding clauses detached: 1496 deleted: 0 T: 0.00
+c [branch] rebuilding order heap for all branchings. Current branching: vsid
+c [watchlist] avg watchlist size: 0.77 Avg cl size: 2.33 Cls: 396 Total WS size: 396 used_in_xor: 0 used_in_xor_full: 0 bin cl: 264
+c [branch] adjusting to: vsid (from: vsid) var_decay:0.95 descr: VSIDS
+Searcher::search()
+search():end
+c rst  geom  stb   vs     1   112     256  1562   132    3.94    3.79     0     4   108     0   19.35   19.35
+Searcher::search()
+search():end
+c rst  geom  stb   vs     2   116     256  1562   132    3.94    3.79     0     4   112     0   19.05   19.05
+c [gauss] extended XOR clash vars. set: 0 double-undef: 0 iters: 1 random_set: 0 T: 0.00
+l_True
+l_False, l_False, l_False, l_False, l_False, l_True, l_False, l_True, l_False, l_False, l_True, l_True, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_True, l_False, l_False, l_True, l_True, l_False, l_False, l_False, l_False, l_False, l_False, l_False, l_True, l_True, l_False, l_False, l_False, l_False, l_False, l_True, 
+c ------- FINAL TOTAL SEARCH STATS ---------
+c UIP search time          : 0.00        (0.00      % time)
+c restarts                 : 2           (58.00     confls per restart)
+c blocked restarts         : 0           (0.00      per normal restart)
+c time                     : 0.00        
+c decisions                : 496         (0.00      % random)
+c propagations             : 2319        (0         props/s)
+c decisions/conflicts      : 4.28        
+c conflicts                : 116         
+c conf lits non-minim      : 4319        (37.23     lit/confl)
+c conf lits final          : 19.05       
+c red which0               : 0           (0.00      % of confl)
+c props/decision           : 0.00        
+c props/conflict           : 0.00        
+c 0-depth assigns          : 0           (0.00      % vars)
+c 0-depth assigns by CNF   : 0           (0.00      % vars)
+c reduceDB time            : 0.00        (0.00      % time)
+c OccSimplifier time       : 0.00        (0.00      % time)
+c [occur] 0.00 is overhead
+c [occur] link-in T: 0.00 cleanup T: 0.00
+c [occ-substr] long subBySub: 0 subByStr: 0 lits-rem-str: 0 T: 0.00
+c SCC time                 : 0.00        (0.00      % time)
+c [scc] new: 0 BP 0M  T: 0.00
+c vrep replace time        : 0.00        (0.00      % time)
+c vrep tree roots          : 0           
+c vrep trees' crown        : 0           (0.00      leafs/tree)
+c distill long time        : 0.00        (0.00      % time)
+c distill bin time         : 0.00        (0.00      % time)
+c strength cache-irred time: 0.00        (0.00      % time)
+c strength cache-red time  : 0.00        (0.00      % time)
+c avg cls in red 0         : 0.00        
+c avg cls in red 1         : 0.99        
+c avg cls in red 2         : 56.51       
+c Conflicts in UIP         : 116         (22834.65  confl/time_this_thread)
+c Max Memory (rss) used    : 4740 kB     
+c Total time (this thread) : 0.01        
+c [g 0] truth-find prop checks  : 1026
+c [g 0] -> of which prop        : 27.39 %
+c [g 0] -> of which confl       :  5.95 %
+c [g 0] elim called             : 246
+c [g 0] ---> which lead to prop : 37.80 %
+c [g 0] ---> which lead to confl:  5.28 %
+c [g 0] size: 12    x 78   

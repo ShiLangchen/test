@@ -1,0 +1,20 @@
+c Total time (this thread) : 10.06       
+origin
+c Total time (this thread) : 29.10       
+incremental
+c Total time (this thread) : 76.92       
+incremental
+c Total time (this thread) : 142.72      
+origin
+c Total time (this thread) : 32.28       
+origin
+c Total time (this thread) : 125.86      
+incremental
+c Total time (this thread) : 130.11      
+incremental
+c Total time (this thread) : 226.70      
+origin
+c Total time (this thread) : 72.34       
+incremental
+c Total time (this thread) : 204.42      
+origin

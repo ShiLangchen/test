@@ -699,6 +699,12 @@ PropBy PropEngine::propagate_any_order()
         if (confl.isNULL() && !distill_use) {
             confl = gauss_jordan_elim(p, currLevel);
         }
+        
+        if (confl.isNULL() && !distill_use) {
+            if (!solver->process_ext_on_assign(p)) {
+                confl = PropBy();
+            }
+        }
 
         qhead++;
     }

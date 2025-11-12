@@ -1,0 +1,33 @@
+n=24
+Exhusted: 71.152 s
+Exhusted: 71.0584 s
+Exhusted: 71.5011 s
+c Total time (this thread) : 95.65       
+after
+c Total time (this thread) : 129.06      
+origin
+n=27
+Exhusted: 719.657 s
+c Total time (this thread) : 687.70      
+after
+c Total time (this thread) : 1505.30     
+origin
+c Total time (this thread) : 81.91       
+origin
+c Total time (this thread) : 547.82      
+after
+c Total time (this thread) : 1549.89     
+origin
+c Total time (this thread) : 1793.13     
+after
+c Total time (this thread) : 627.22      
+after
+c Total time (this thread) : 2445.00     
+origin
+Exhusted: 6546.65 s
+c Total time (this thread) : 3495.70     
+after
+c Total time (this thread) : 10354.31    
+origin
+c Total time (this thread) : 9217.77     
+after

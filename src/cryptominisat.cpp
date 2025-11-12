@@ -186,6 +186,8 @@ DLL_PUBLIC SATSolver::SATSolver(
 
     data->solvers.push_back(new Solver((SolverConf*) config, data->must_interrupt));
     data->cpu_times.push_back(0.0);
+    
+    xor_ext_simplifier = data->solvers[0]->xor_ext_simplifier;
 }
 
 DLL_PUBLIC SATSolver::~SATSolver()
@@ -960,6 +962,7 @@ lbool calc(
 
         lbool ret ;
         if (todo == Todo::todo_solve) {
+            // (*data->log) << "c bump: solve_with_assumptions"<<endl;
             ret = data->solvers[0]->solve_with_assumptions(assumptions, only_sampling_solution);
         } else if (todo == Todo::todo_simplify) {
             ret = data->solvers[0]->simplify_with_assumptions(assumptions, strategy);

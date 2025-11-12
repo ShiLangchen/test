@@ -1,0 +1,103 @@
+eq30_2_randAssign: 
+15 success
+c Total time (this thread) : 364.58      
+eq30_11_randAssign: 
+100 success
+c Total time (this thread) : 1847.65     
+eq30_2_origin: 
+c Total time (this thread) : 1550.32     
+eq30_19_randAssign: 
+188 success
+c Total time (this thread) : 2127.01     
+eq30_14_randAssign: 
+124 success
+c Total time (this thread) : 2504.67     
+eq30_7_randAssign: 
+226 success
+c Total time (this thread) : 2956.97     
+eq30_9_randAssign: 
+160 success
+c Total time (this thread) : 3266.16     
+eq30_7_origin: 
+c Total time (this thread) : 469.54      
+eq30_11_origin: 
+eq30_19_origin: 
+eq30_14_origin: 
+eq30_16_randAssign: 
+280 success
+c Total time (this thread) : 4468.81     
+eq30_9_origin: 
+eq30_4_randAssign: 
+601 success
+c Total time (this thread) : 5574.55     
+eq30_13_randAssign: 
+383 success
+c Total time (this thread) : 5681.36     
+eq30_12_randAssign: 
+301 success
+c Total time (this thread) : 6192.36     
+eq30_16_origin: 
+eq30_4_origin: 
+eq30_15_randAssign: 
+358 success
+c Total time (this thread) : 7451.83     
+eq30_13_origin: 
+eq30_17_randAssign: 
+499 success
+c Total time (this thread) : 7853.83     
+eq30_12_origin: 
+eq30_15_origin: 
+eq30_17_origin: 
+eq30_20_randAssign: 
+544 success
+c Total time (this thread) : 10357.25    
+eq30_18_randAssign: 
+eq30_20_origin: 
+eq30_5_randAssign: 
+eq30_8_randAssign: 
+1023 success
+c Total time (this thread) : 13879.88    
+eq30_18_origin: 
+eq30_5_origin: 
+eq30_1_randAssign: 
+988 success
+c Total time (this thread) : 14092.69    
+eq30_8_origin: 
+c Total time (this thread) : 303.61      
+eq30_1_origin: 
+eq30_6_randAssign: 
+eq30_3_randAssign: 
+eq30_10_randAssign: 
+eq30_6_origin: 
+eq30_3_origin: 
+eq30_10_origin: 
+eq30_8_origin: 
+c Total time (this thread) : 316.12      
+eq30_7_origin: 
+c Total time (this thread) : 463.83      
+eq30_2_origin: 
+c Total time (this thread) : 1497.80     
+eq30_15_origin: 
+c Total time (this thread) : 1984.69     
+eq30_17_origin: 
+c Total time (this thread) : 2026.88     
+eq30_11_origin: 
+c Total time (this thread) : 2445.07     
+eq30_16_origin: 
+c Total time (this thread) : 3895.89     
+eq30_4_origin: 
+c Total time (this thread) : 3912.37     
+eq30_19_origin: 
+c Total time (this thread) : 4199.25     
+eq30_13_origin: 
+c Total time (this thread) : 4309.56     
+eq30_18_origin: 
+eq30_14_origin: 
+eq30_12_origin: 
+eq30_5_origin: 
+eq30_10_origin: 
+eq30_20_origin: 
+eq30_9_origin: 
+eq30_3_origin: 
+eq30_6_origin: 
+eq30_1_origin: 

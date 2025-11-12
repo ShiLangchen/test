@@ -1,0 +1,183 @@
+eq27_5_origin: 
+c Total time (this thread) : 42.55       
+eq27_7_origin: 
+c Total time (this thread) : 56.44       
+eq27_8_origin: 
+c Total time (this thread) : 108.27      
+eq27_8_randAssign: 
+15 success
+c Total time (this thread) : 46.72       
+eq27_6_origin: 
+c Total time (this thread) : 298.76      
+eq27_10_origin: 
+c Total time (this thread) : 314.42      
+eq27_2_origin: 
+c Total time (this thread) : 653.12      
+eq27_5_randAssign: 
+177 success
+c Total time (this thread) : 676.13      
+eq27_1_origin: 
+c Total time (this thread) : 853.64      
+eq27_9_origin: 
+c Total time (this thread) : 946.55      
+eq27_7_randAssign: 
+271 success
+c Total time (this thread) : 922.35      
+eq27_12_origin: 
+c Total time (this thread) : 334.34      
+eq27_10_randAssign: 
+271 success
+c Total time (this thread) : 868.08      
+eq27_6_randAssign: 
+271 success
+c Total time (this thread) : 897.85      
+eq27_12_randAssign: 
+63 success
+c Total time (this thread) : 219.73      
+eq27_3_origin: 
+c Total time (this thread) : 1286.26     
+eq27_2_randAssign: 
+271 success
+c Total time (this thread) : 655.33      
+eq27_15_origin: 
+c Total time (this thread) : 142.33      
+eq27_15_randAssign: 
+12 success
+c Total time (this thread) : 35.20       
+eq27_17_origin: 
+c Total time (this thread) : 137.82      
+eq27_1_randAssign: 
+271 success
+c Total time (this thread) : 766.30      
+eq27_4_origin: 
+c Total time (this thread) : 1729.67     
+eq27_9_randAssign: 
+271 success
+c Total time (this thread) : 825.33      
+eq27_20_origin: 
+c Total time (this thread) : 318.60      
+eq27_3_randAssign: 
+271 success
+c Total time (this thread) : 969.70      
+eq27_19_origin: 
+c Total time (this thread) : 678.68      
+eq27_17_randAssign: 
+271 success
+c Total time (this thread) : 856.05      
+eq27_16_origin: 
+c Total time (this thread) : 1385.79     
+eq27_4_randAssign: 
+271 success
+c Total time (this thread) : 988.07      
+eq27_14_origin: 
+c Total time (this thread) : 1646.96     
+eq27_19_randAssign: 
+271 success
+c Total time (this thread) : 924.32      
+eq27_20_randAssign: 
+271 success
+c Total time (this thread) : 1152.31     
+eq27_11_origin: 
+c Total time (this thread) : 3396.16     
+eq27_16_randAssign: 
+271 success
+c Total time (this thread) : 928.99      
+eq27_14_randAssign: 
+222 success
+c Total time (this thread) : 776.27      
+eq27_11_randAssign: 
+271 success
+c Total time (this thread) : 652.32      
+eq27_13_origin: 
+c Total time (this thread) : 3332.92     
+eq27_13_randAssign: 
+48 success
+c Total time (this thread) : 161.20      
+eq27_18_origin: 
+c Total time (this thread) : 3219.65     
+eq27_18_randAssign: 
+271 success
+c Total time (this thread) : 652.77      
+
+eq27_37_origin: 
+c Total time (this thread) : 5.30        
+eq27_30_origin: 
+c Total time (this thread) : 14.98       
+eq27_21_origin: 
+c Total time (this thread) : 85.08       
+eq27_29_origin: 
+c Total time (this thread) : 88.81       
+eq27_37_randAssign: 
+31 success
+c Total time (this thread) : 125.17      
+eq27_32_origin: 
+c Total time (this thread) : 229.71      
+eq27_30_randAssign: 
+69 success
+c Total time (this thread) : 300.36      
+eq27_31_origin: 
+c Total time (this thread) : 385.30      
+eq27_32_randAssign: 
+61 success
+c Total time (this thread) : 206.16      
+eq27_27_origin: 
+c Total time (this thread) : 441.72      
+eq27_35_origin: 
+c Total time (this thread) : 468.61      
+eq27_31_randAssign: 
+43 success
+c Total time (this thread) : 97.16       
+eq27_33_origin: 
+c Total time (this thread) : 507.86      
+eq27_38_origin: 
+c Total time (this thread) : 554.23      
+eq27_38_randAssign: 
+54 success
+c Total time (this thread) : 207.12      
+eq27_26_origin: 
+c Total time (this thread) : 787.65      
+eq27_26_randAssign: 
+17 success
+c Total time (this thread) : 76.01       
+eq27_36_origin: 
+c Total time (this thread) : 954.23      
+eq27_29_randAssign: 
+249 success
+c Total time (this thread) : 991.28      
+eq27_35_randAssign: 
+224 success
+c Total time (this thread) : 675.99      
+eq27_21_randAssign: 
+490 success
+c Total time (this thread) : 1183.61     
+eq27_33_randAssign: 
+334 success
+c Total time (this thread) : 1068.55     
+eq27_27_randAssign: 
+499 success
+c Total time (this thread) : 1971.89     
+eq27_36_randAssign: 
+496 success
+c Total time (this thread) : 1668.37     
+eq27_28_origin: 
+c Total time (this thread) : 2621.58     
+eq27_28_randAssign: 
+8 success
+c Total time (this thread) : 33.53       
+eq27_40_origin: 
+eq27_24_origin: 
+c Total time (this thread) : 3770.46     
+eq27_22_origin: 
+eq27_24_randAssign: 
+179 success
+c Total time (this thread) : 578.97      
+eq27_40_randAssign: 
+eq27_23_origin: 
+eq27_22_randAssign: 
+eq27_34_origin: 
+eq27_39_origin: 
+eq27_25_origin: 
+eq27_23_randAssign: 
+eq27_34_randAssign: 
+eq27_25_randAssign: 
+eq27_39_randAssign: 

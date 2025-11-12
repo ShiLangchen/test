@@ -42,11 +42,22 @@ class Lit
     uint32_t x;
     constexpr explicit Lit(uint32_t i) : x(i) { }
 public:
+    bool isorigin=true;
+    // constexpr Lit() : var_map{0, 0} {}  // ʹ���б���ʼ����ʽ��ʼ������  
+    uint32_t var_map[2]={0,0};  
+    // uint32_t var_map[2];
     constexpr Lit() : x(var_Undef<<1) {}   // (lit_Undef)
+    
+    constexpr explicit Lit(uint32_t var, bool is_inverted, uint32_t map_var1, uint32_t map_var2) :
+        x(var + var + is_inverted)
+    {
+        isorigin=false;
+        var_map[0]=map_var1;
+        var_map[1]=map_var2;
+    }
     constexpr explicit Lit(uint32_t var, bool is_inverted) :
         x(var + var + is_inverted)
     {}
-
     constexpr const uint32_t& toInt() const { // Guarantees small, positive integers suitable for array indexing.
         return x;
     }

@@ -896,6 +896,8 @@ MODULE_INIT_FUNC(pycryptosat)
 
     // Add the version string so users know what version of CryptoMiniSat
     // they're using.
+#if defined(_MSC_VER)
+#else
     if (PyModule_AddStringConstant(m, "__version__", CMS_FULL_VERSION) == -1) {
         Py_DECREF(m);
         return NULL;
@@ -904,6 +906,8 @@ MODULE_INIT_FUNC(pycryptosat)
         Py_DECREF(m);
         return NULL;
     }
+#endif
+
 
     // Add the Solver type.
     Py_INCREF(&pycryptosat_SolverType);

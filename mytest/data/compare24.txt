@@ -1,0 +1,575 @@
+eq24_2_origin: 
+eq24_1_origin: 
+eq24_4_origin: 
+eq24_5_origin: 
+eq24_3_origin: 
+c Total time (this thread) : 0.54        
+c Total time (this thread) : 0.53        
+c Total time (this thread) : 0.54        
+c Total time (this thread) : 0.54        
+c Total time (this thread) : 0.53        
+eq24_1_randAssign: 
+168 success
+c Total time (this thread) : 159.99      
+eq24_5_randAssign: 
+168 success
+c Total time (this thread) : 160.89      
+eq24_4_randAssign: 
+168 success
+c Total time (this thread) : 167.66      
+eq24_3_randAssign: 
+168 success
+c Total time (this thread) : 167.81      
+eq24_2_randAssign: 
+168 success
+c Total time (this thread) : 168.46      
+eq24_8_origin: 
+c Total time (this thread) : 4.92        
+eq24_9_origin: 
+c Total time (this thread) : 5.05        
+eq24_9_randAssign: 
+30 success
+c Total time (this thread) : 18.97       
+eq24_8_randAssign: 
+30 success
+c Total time (this thread) : 19.54       
+eq24_10_origin: 
+c Total time (this thread) : 128.28      
+eq24_7_origin: 
+c Total time (this thread) : 146.33      
+eq24_6_origin: 
+c Total time (this thread) : 149.43      
+eq24_7_randAssign: 
+240 success
+c Total time (this thread) : 119.95      
+eq24_6_randAssign: 
+240 success
+c Total time (this thread) : 124.56      
+eq24_10_randAssign: 
+240 success
+c Total time (this thread) : 174.11      
+
+
+eq24_1_origin: 
+c Total time (this thread) : 5.00        
+eq24_5_origin: 
+c Total time (this thread) : 7.27        
+eq24_8_origin: 
+c Total time (this thread) : 22.08       
+eq24_4_origin: 
+c Total time (this thread) : 25.57       
+eq24_1_randAssign: 
+30 success
+c Total time (this thread) : 20.72       
+eq24_7_origin: 
+c Total time (this thread) : 29.85       
+eq24_11_origin: 
+c Total time (this thread) : 8.59        
+eq24_8_randAssign: 
+46 success
+c Total time (this thread) : 36.13       
+eq24_9_origin: 
+c Total time (this thread) : 60.19       
+eq24_9_randAssign: 
+7 success
+c Total time (this thread) : 4.53        
+eq24_6_origin: 
+c Total time (this thread) : 65.07       
+eq24_2_origin: 
+c Total time (this thread) : 81.45       
+eq24_12_origin: 
+c Total time (this thread) : 37.48       
+eq24_5_randAssign: 
+116 success
+c Total time (this thread) : 94.88       
+eq24_11_randAssign: 
+103 success
+c Total time (this thread) : 68.17       
+eq24_13_origin: 
+c Total time (this thread) : 56.05       
+eq24_12_randAssign: 
+47 success
+c Total time (this thread) : 25.28       
+eq24_15_origin: 
+c Total time (this thread) : 19.82       
+eq24_2_randAssign: 
+137 success
+c Total time (this thread) : 107.94      
+eq24_7_randAssign: 
+229 success
+c Total time (this thread) : 160.21      
+eq24_4_randAssign: 
+240 success
+c Total time (this thread) : 167.40      
+eq24_6_randAssign: 
+240 success
+c Total time (this thread) : 132.03      
+eq24_20_origin: 
+c Total time (this thread) : 14.19       
+eq24_15_randAssign: 
+128 success
+c Total time (this thread) : 88.64       
+eq24_3_origin: 
+c Total time (this thread) : 212.33      
+eq24_19_origin: 
+c Total time (this thread) : 23.38       
+eq24_14_origin: 
+c Total time (this thread) : 130.82      
+eq24_16_origin: 
+c Total time (this thread) : 150.99      
+eq24_16_randAssign: 
+41 success
+c Total time (this thread) : 20.14       
+eq24_13_randAssign: 
+173 success
+c Total time (this thread) : 172.91      
+eq24_20_randAssign: 
+177 success
+c Total time (this thread) : 85.56       
+eq24_18_origin: 
+c Total time (this thread) : 114.96      
+eq24_10_origin: 
+c Total time (this thread) : 320.26      
+eq24_14_randAssign: 
+144 success
+c Total time (this thread) : 113.08      
+eq24_3_randAssign: 
+240 success
+c Total time (this thread) : 149.69      
+eq24_19_randAssign: 
+240 success
+c Total time (this thread) : 165.30      
+eq24_17_origin: 
+c Total time (this thread) : 193.37      
+eq24_18_randAssign: 
+240 success
+c Total time (this thread) : 133.02      
+eq24_17_randAssign: 
+240 success
+c Total time (this thread) : 141.34      
+eq24_10_randAssign: 
+240 success
+c Total time (this thread) : 231.47  
+
+
+eq24_37_origin: 
+c Total time (this thread) : 4.03        
+eq24_33_origin: 
+c Total time (this thread) : 7.98        
+eq24_26_origin: 
+c Total time (this thread) : 16.67       
+eq24_31_origin: 
+c Total time (this thread) : 17.06       
+eq24_40_origin: 
+c Total time (this thread) : 24.71       
+eq24_36_origin: 
+c Total time (this thread) : 26.20       
+eq24_26_randAssign: 
+11 success
+c Total time (this thread) : 10.83       
+eq24_29_origin: 
+c Total time (this thread) : 29.85       
+eq24_32_origin: 
+c Total time (this thread) : 30.34       
+eq24_32_randAssign: 
+3 success
+c Total time (this thread) : 1.99        
+eq24_31_randAssign: 
+20 success
+c Total time (this thread) : 18.11       
+eq24_37_randAssign: 
+51 success
+c Total time (this thread) : 37.92       
+eq24_22_origin: 
+c Total time (this thread) : 48.54       
+eq24_39_origin: 
+c Total time (this thread) : 50.53       
+eq24_33_randAssign: 
+51 success
+c Total time (this thread) : 43.28       
+eq24_38_origin: 
+c Total time (this thread) : 56.42       
+eq24_40_randAssign: 
+51 success
+c Total time (this thread) : 36.15       
+eq24_25_origin: 
+c Total time (this thread) : 64.07       
+eq24_22_randAssign: 
+26 success
+c Total time (this thread) : 15.66       
+eq24_36_randAssign: 
+51 success
+c Total time (this thread) : 39.78       
+eq24_25_randAssign: 
+13 success
+c Total time (this thread) : 11.33       
+eq24_29_randAssign: 
+51 success
+c Total time (this thread) : 47.91       
+eq24_39_randAssign: 
+51 success
+c Total time (this thread) : 32.18       
+eq24_38_randAssign: 
+51 success
+c Total time (this thread) : 38.99       
+eq24_34_origin: 
+c Total time (this thread) : 124.57      
+eq24_27_origin: 
+c Total time (this thread) : 154.60      
+eq24_23_origin: 
+c Total time (this thread) : 158.33      
+eq24_34_randAssign: 
+51 success
+c Total time (this thread) : 35.91       
+eq24_23_randAssign: 
+51 success
+c Total time (this thread) : 23.28       
+eq24_30_origin: 
+c Total time (this thread) : 183.46      
+eq24_35_origin: 
+c Total time (this thread) : 192.93      
+eq24_27_randAssign: 
+51 success
+c Total time (this thread) : 40.14       
+eq24_24_origin: 
+c Total time (this thread) : 212.06      
+eq24_30_randAssign: 
+51 success
+c Total time (this thread) : 31.33       
+eq24_28_origin: 
+c Total time (this thread) : 218.34      
+eq24_35_randAssign: 
+44 success
+c Total time (this thread) : 46.63       
+eq24_28_randAssign: 
+51 success
+c Total time (this thread) : 36.71       
+eq24_24_randAssign: 
+51 success
+c Total time (this thread) : 48.58       
+eq24_21_origin: 
+c Total time (this thread) : 292.27      
+eq24_21_randAssign: 
+51 success
+c Total time (this thread) : 48.90  
+
+
+
+eq24_37_origin: 
+c Total time (this thread) : 3.87        
+eq24_37_randAssign: 
+51 success
+c Total time (this thread) : 0.35        
+eq24_33_origin: 
+c Total time (this thread) : 7.83        
+eq24_33_randAssign: 
+51 success
+c Total time (this thread) : 0.13        
+eq24_26_origin: 
+c Total time (this thread) : 16.04       
+eq24_26_randAssign: 
+51 success
+c Total time (this thread) : 0.35        
+eq24_31_origin: 
+c Total time (this thread) : 16.73       
+eq24_31_randAssign: 
+51 success
+c Total time (this thread) : 0.33        
+eq24_40_origin: 
+c Total time (this thread) : 24.22       
+eq24_40_randAssign: 
+51 success
+c Total time (this thread) : 0.06        
+eq24_36_origin: 
+c Total time (this thread) : 25.83       
+eq24_36_randAssign: 
+51 success
+c Total time (this thread) : 0.13        
+eq24_29_origin: 
+c Total time (this thread) : 28.98       
+eq24_29_randAssign: 
+51 success
+c Total time (this thread) : 0.12        
+eq24_32_origin: 
+c Total time (this thread) : 29.48       
+eq24_32_randAssign: 
+51 success
+c Total time (this thread) : 0.35        
+eq24_22_origin: 
+c Total time (this thread) : 46.98       
+eq24_22_randAssign: 
+51 success
+c Total time (this thread) : 0.16        
+eq24_39_origin: 
+c Total time (this thread) : 49.27       
+eq24_39_randAssign: 
+51 success
+c Total time (this thread) : 0.05        
+eq24_38_origin: 
+c Total time (this thread) : 55.64       
+eq24_38_randAssign: 
+51 success
+c Total time (this thread) : 0.19        
+eq24_25_origin: 
+c Total time (this thread) : 62.45       
+eq24_25_randAssign: 
+51 success
+c Total time (this thread) : 0.46        
+eq24_34_origin: 
+c Total time (this thread) : 123.02      
+eq24_34_randAssign: 
+51 success
+c Total time (this thread) : 0.20        
+eq24_27_origin: 
+c Total time (this thread) : 149.54      
+eq24_27_randAssign: 
+51 success
+c Total time (this thread) : 0.40        
+eq24_23_origin: 
+c Total time (this thread) : 154.86      
+eq24_23_randAssign: 
+51 success
+c Total time (this thread) : 0.12        
+eq24_30_origin: 
+c Total time (this thread) : 177.89      
+eq24_30_randAssign: 
+51 success
+c Total time (this thread) : 0.15        
+eq24_35_origin: 
+c Total time (this thread) : 187.90      
+eq24_35_randAssign: 
+51 success
+c Total time (this thread) : 0.34        
+eq24_24_origin: 
+c Total time (this thread) : 205.54      
+eq24_24_randAssign: 
+51 success
+c Total time (this thread) : 0.40        
+eq24_28_origin: 
+c Total time (this thread) : 208.89      
+eq24_28_randAssign: 
+51 success
+c Total time (this thread) : 0.29        
+eq24_21_origin: 
+c Total time (this thread) : 280.06      
+eq24_21_randAssign: 
+51 success
+c Total time (this thread) : 0.08 
+
+
+eq24_46_origin: 
+c Total time (this thread) : 38.27       
+eq24_43_origin: 
+c Total time (this thread) : 57.61       
+eq24_47_origin: 
+c Total time (this thread) : 62.54       
+eq24_46_randAssign: 
+50 success
+c Total time (this thread) : 36.07       
+eq24_53_origin: 
+c Total time (this thread) : 76.35       
+eq24_43_randAssign: 
+25 success
+c Total time (this thread) : 18.73       
+eq24_44_origin: 
+c Total time (this thread) : 91.13       
+eq24_57_origin: 
+c Total time (this thread) : 91.74       
+eq24_60_origin: 
+c Total time (this thread) : 99.41       
+eq24_45_origin: 
+c Total time (this thread) : 101.48      
+eq24_44_randAssign: 
+19 success
+c Total time (this thread) : 15.46       
+eq24_47_randAssign: 
+56 success
+c Total time (this thread) : 44.49       
+eq24_45_randAssign: 
+11 success
+c Total time (this thread) : 8.25        
+eq24_42_origin: 
+c Total time (this thread) : 130.21      
+eq24_59_origin: 
+c Total time (this thread) : 150.29      
+eq24_54_origin: 
+c Total time (this thread) : 157.57      
+eq24_59_randAssign: 
+11 success
+c Total time (this thread) : 16.76       
+eq24_53_randAssign: 
+116 success
+c Total time (this thread) : 92.98       
+eq24_55_origin: 
+c Total time (this thread) : 191.34      
+eq24_42_randAssign: 
+83 success
+c Total time (this thread) : 68.28       
+eq24_60_randAssign: 
+162 success
+c Total time (this thread) : 131.99      
+eq24_55_randAssign: 
+91 success
+c Total time (this thread) : 63.50       
+eq24_57_randAssign: 
+183 success
+c Total time (this thread) : 169.20      
+eq24_58_origin: 
+eq24_56_origin: 
+eq24_54_randAssign: 
+206 success
+c Total time (this thread) : 136.37      
+eq24_51_origin: 
+c Total time (this thread) : 299.48      
+eq24_51_randAssign: 
+29 success
+c Total time (this thread) : 26.21       
+eq24_49_origin: 
+eq24_41_origin: 
+eq24_52_origin: 
+eq24_48_origin: 
+c Total time (this thread) : 440.15      
+eq24_56_randAssign: 
+eq24_58_randAssign: 
+eq24_50_origin: 
+eq24_48_randAssign: 
+86 success
+c Total time (this thread) : 65.80       
+eq24_49_randAssign: 
+eq24_41_randAssign: 
+eq24_52_randAssign: 
+eq24_50_randAssign: 
+
+
+eq24_33_origin: 
+c Total time (this thread) : 7.96        
+eq24_32_origin: 
+c Total time (this thread) : 10.60       
+eq24_24_origin: 
+c Total time (this thread) : 32.46       
+eq24_35_origin: 
+c Total time (this thread) : 35.46       
+eq24_26_origin: 
+c Total time (this thread) : 49.24       
+eq24_39_origin: 
+c Total time (this thread) : 50.18       
+eq24_32_randAssign: 
+80 success
+c Total time (this thread) : 48.04       
+eq24_38_origin: 
+c Total time (this thread) : 66.64       
+eq24_30_origin: 
+c Total time (this thread) : 98.83       
+eq24_26_randAssign: 
+75 success
+c Total time (this thread) : 49.73       
+eq24_33_randAssign: 
+157 success
+c Total time (this thread) : 100.61      
+eq24_21_origin: 
+c Total time (this thread) : 119.89      
+eq24_38_randAssign: 
+98 success
+c Total time (this thread) : 61.41       
+eq24_25_origin: 
+c Total time (this thread) : 133.51      
+eq24_25_randAssign: 
+27 success
+c Total time (this thread) : 21.34       
+eq24_24_randAssign: 
+186 success
+c Total time (this thread) : 141.68      
+eq24_30_randAssign: 
+90 success
+c Total time (this thread) : 78.76       
+eq24_35_randAssign: 
+240 success
+c Total time (this thread) : 145.95      
+eq24_37_origin: 
+c Total time (this thread) : 206.84      
+eq24_21_randAssign: 
+89 success
+c Total time (this thread) : 95.08       
+eq24_39_randAssign: 
+232 success
+c Total time (this thread) : 170.74      
+eq24_40_origin: 
+c Total time (this thread) : 226.30      
+eq24_23_origin: 
+eq24_40_randAssign: 
+104 success
+c Total time (this thread) : 55.65       
+eq24_37_randAssign: 
+147 success
+c Total time (this thread) : 138.51      
+eq24_28_origin: 
+eq24_27_origin: 
+c Total time (this thread) : 373.73      
+eq24_29_origin: 
+c Total time (this thread) : 385.17      
+eq24_27_randAssign: 
+29 success
+c Total time (this thread) : 28.79       
+eq24_22_origin: 
+eq24_34_origin: 
+eq24_23_randAssign: 
+eq24_29_randAssign: 
+138 success
+c Total time (this thread) : 118.35      
+eq24_28_randAssign: 
+eq24_31_origin: 
+eq24_22_randAssign: 
+eq24_36_origin: 
+eq24_34_randAssign: 
+eq24_31_randAssign: 
+eq24_36_randAssign: 
+eq24_11_randAssign: 
+eq24_11_origin: 
+c Total time (this thread) : 8.56        
+eq24_1_randAssign: 
+eq24_1_origin: 
+c Total time (this thread) : 5.04        
+eq24_14_randAssign: 
+eq24_4_randAssign: 
+eq24_17_randAssign: 
+eq24_7_randAssign: 
+eq24_20_randAssign: 
+eq24_4_origin: 
+c Total time (this thread) : 26.56       
+eq24_3_randAssign: 
+eq24_20_origin: 
+c Total time (this thread) : 14.44       
+eq24_7_origin: 
+c Total time (this thread) : 30.73       
+eq24_19_randAssign: 
+eq24_5_randAssign: 
+eq24_6_randAssign: 
+eq24_5_origin: 
+c Total time (this thread) : 7.54        
+eq24_12_randAssign: 
+eq24_13_randAssign: 
+eq24_2_randAssign: 
+eq24_18_randAssign: 
+eq24_19_origin: 
+c Total time (this thread) : 23.41       
+eq24_9_randAssign: 
+eq24_16_randAssign: 
+eq24_15_randAssign: 
+eq24_10_randAssign: 
+eq24_8_randAssign: 
+eq24_12_origin: 
+c Total time (this thread) : 38.04       
+eq24_15_origin: 
+c Total time (this thread) : 20.18       
+eq24_8_origin: 
+c Total time (this thread) : 22.37       
+eq24_13_origin: 
+c Total time (this thread) : 56.72       
+eq24_6_origin: 
+c Total time (this thread) : 66.83       
+eq24_14_origin: 
+c Total time (this thread) : 132.90      
+eq24_9_origin: 
+c Total time (this thread) : 60.03       
+eq24_2_origin: 
+c Total time (this thread) : 81.60       

@@ -71,6 +71,7 @@ THE SOFTWARE.
 #include "sqlstats.h"
 #include "frat.h"
 #include "xorfinder.h"
+#include "xorextsimplifier.h"
 #include "cardfinder.h"
 #include "sls.h"
 #include "matrixfinder.h"
@@ -136,6 +137,7 @@ Solver::Solver(const SolverConf *_conf, std::atomic<bool>* _must_interrupt_inter
     datasync = new DataSync(this, NULL);
     Searcher::solver = this;
     reduceDB = new ReduceDB(this);
+    xor_ext_simplifier = new XorExtSimplifier(this);
 
     set_up_sql_writer();
     next_lev1_reduce = conf.every_lev1_reduce;
@@ -162,10 +164,168 @@ Solver::~Solver()
     delete subsumeImplicit;
     delete datasync;
     delete reduceDB;
+    delete xor_ext_simplifier;
 #ifdef USE_BREAKID
     delete breakid;
 #endif
     delete card_finder;
+}
+
+bool Solver::process_ext_on_assign(Lit p)
+{
+    if (!xor_ext_simplifier) {
+        return true;
+    }
+    
+    uint32_t v = p.var();
+    lbool val = value(v);
+    
+    const auto& subs = xor_ext_simplifier->get_substitutions();
+    if (subs.empty()) {
+        return true;
+    }
+    
+    if (conf.verbosity >= 4) {
+        cout << "c [xor-ext] process_ext_on_assign: x" << v+1 
+             << "=" << (val == l_True ? "1" : (val == l_False ? "0" : "?"))
+             << " total_subs=" << subs.size() << endl;
+    }
+    
+    xor_ext_simplifier->handle_var_assignment(v, val == l_True);
+    
+    const vector<int>* related_subs = xor_ext_simplifier->get_substitutions_for_var(v);
+    if (!related_subs) {
+        return true;
+    }
+    
+    const auto& all_subs = xor_ext_simplifier->get_substitutions();
+    for (int i : *related_subs) {
+        const ExtSubstitution& sub = all_subs[i];
+        
+        if (sub.level >= 0) {
+            continue;
+        }
+        
+        uint32_t target = sub.target;
+        lbool target_val = value(target);
+        
+        if (target_val != l_Undef) {
+            continue;
+        }
+        
+        Lit to_enqueue = lit_Undef;
+        PropBy reason;
+        
+        if (val == l_True) {
+            if (sub.current_degree == 0) {
+                to_enqueue = Lit(target, false);
+                
+                if (sub.all_true_cl_offset != CL_OFFSET_MAX) {
+                    reason = PropBy(sub.all_true_cl_offset);
+                    if (conf.verbosity >= 3) {
+                        cout << "c [xor-ext] all factors=1 -> y" << target+1 << "=1" 
+                             << " reason=clause(offset=" << sub.all_true_cl_offset << ")" << endl;
+                    }
+                } else {
+                    if (conf.verbosity >= 2) {
+                        cout << "c [xor-ext] WARNING: no all_true_cl_offset, skipping propagation" << endl;
+                    }
+                    to_enqueue = lit_Undef;
+                }
+            } else if (sub.current_degree == 1) {
+                uint32_t last = var_Undef;
+                for (uint32_t f : sub.factors) {
+                    if (value(f) == l_Undef) {
+                        last = f;
+                        break;
+                    }
+                }
+                
+                if (last != var_Undef) {
+                    uint32_t old_alias = xor_ext_simplifier->get_gauss_alias(target);
+                    xor_ext_undo.push_back(ExtUndoLog(target, old_alias, sub.current_degree, decisionLevel()));
+                    
+                    xor_ext_simplifier->set_gauss_alias(target, last);
+                    xor_ext_simplifier->set_substitution_level(i, decisionLevel());
+                    
+                    if (conf.verbosity >= 3) {
+                        cout << "c [xor-ext] alias: y" << target+1 
+                             << " <- x" << last+1 << " (deferred propagation)" << endl;
+                    }
+                }
+            }
+        } else if (val == l_False) {
+            if (sub.current_degree == 0) {
+                to_enqueue = Lit(target, true);
+                
+                Lit lit_x = Lit(v, false);
+                Lit lit_y_neg = Lit(target, true);
+                
+                bool found_bin = false;
+                watch_subarray_const ws = watches[lit_x];
+                for (const Watched& w : ws) {
+                    if (w.isBin() && w.lit2() == lit_y_neg) {
+                        reason = PropBy(lit_x, w.red(), w.get_ID());
+                        found_bin = true;
+                        if (conf.verbosity >= 3) {
+                            cout << "c [xor-ext] x" << v+1 << "=0 -> y" << target+1 << "=0" 
+                                 << " reason=binary(watch found, red=" << w.red() << ", id=" << w.get_ID() << ")" << endl;
+                        }
+                        break;
+                    }
+                }
+                
+                if (!found_bin) {
+                    if (conf.verbosity >= 3) {
+                        cout << "c [xor-ext] WARNING: binary watch not found for x" << v+1 << "->y" << target+1 << ", skipping" << endl;
+                    }
+                    to_enqueue = lit_Undef;
+                }
+            }
+        }
+        
+        if (to_enqueue != lit_Undef) {
+            if (value(to_enqueue) == l_False) {
+                if (conf.verbosity >= 3) {
+                    cout << "c [xor-ext] CONFLICT detected!" << endl;
+                }
+                return false;
+            }
+            if (value(to_enqueue) == l_Undef && !reason.isNULL()) {
+                enqueue<false>(to_enqueue, decisionLevel(), reason);
+            }
+        }
+    }
+    
+    return true;
+}
+
+void Solver::undo_ext_until(int level)
+{
+    if (!xor_ext_simplifier) {
+        return;
+    }
+    
+    while (!xor_ext_undo.empty() && xor_ext_undo.back().level > level) {
+        const ExtUndoLog& log = xor_ext_undo.back();
+        
+        if (log.old_alias == var_Undef) {
+            xor_ext_simplifier->remove_gauss_alias(log.target);
+        } else {
+            xor_ext_simplifier->set_gauss_alias_direct(log.target, log.old_alias);
+        }
+        
+        auto& subs = xor_ext_simplifier->get_substitutions_mut();
+        for (auto& sub : subs) {
+            if (sub.target == log.target) {
+                sub.current_degree = log.old_degree;
+                sub.level = -1;
+                break;
+            }
+        }
+        
+        xor_ext_undo.pop_back();
+    }
 }
 
 void Solver::set_sqlite(

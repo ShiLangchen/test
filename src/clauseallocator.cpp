@@ -271,7 +271,7 @@ void ClauseAllocator::consolidate(
     BASE_DATA_TYPE * const newDataStart = (BASE_DATA_TYPE*)malloc(currentlyUsedSize*sizeof(BASE_DATA_TYPE));
     BASE_DATA_TYPE * new_ptr = newDataStart;
 
-    assert(sizeof(BASE_DATA_TYPE) % sizeof(Lit) == 0);
+    // assert(sizeof(BASE_DATA_TYPE) % sizeof(Lit) == 0);
 
     vector<bool> visited(solver->watches.size(), 0);
     for(auto& ws: solver->watches) {

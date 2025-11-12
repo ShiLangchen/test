@@ -1,0 +1,6 @@
+eq33_4_randAssign: 
+71 success
+c Total time (this thread) : 7653.67     
+eq33_3_randAssign: 
+124 success
+c Total time (this thread) : 10781.94    

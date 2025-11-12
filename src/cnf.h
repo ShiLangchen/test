@@ -321,7 +321,11 @@ public:
 
     Lit map_to_with_bva(const Lit lit) const
     {
-        return Lit(outer_to_with_bva_map.at(lit.var()), lit.sign());
+        if(lit.isorigin){
+            return Lit(outer_to_with_bva_map.at(lit.var()), lit.sign());
+        }else{
+            return Lit(outer_to_with_bva_map.at(lit.var()), lit.sign(),outer_to_with_bva_map.at(lit.var_map[0]),outer_to_with_bva_map.at(lit.var_map[1]));
+        }
     }
 
     uint32_t map_to_with_bva(const uint32_t var) const

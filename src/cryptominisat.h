@@ -33,6 +33,7 @@ THE SOFTWARE.
 
 namespace CMSat {
     struct CMSatPrivateData;
+    class XorExtSimplifier;
     #ifdef _WIN32
     class __declspec(dllexport) SATSolver
     #else
@@ -271,6 +272,8 @@ namespace CMSat {
         // Backwards compatibility, implemented using the above "small clauses" functions
         void open_file_and_dump_irred_clauses(const char* fname);
         bool removed_var(uint32_t var) const;
+        
+        XorExtSimplifier* xor_ext_simplifier = nullptr;
 
     private:
 

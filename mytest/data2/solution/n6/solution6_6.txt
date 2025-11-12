@@ -1,0 +1,5 @@
+0 fail, cost: 0 ms
+0, 0, 1, 1, 1, 1, 
+1 success, cost: 0 ms
+2 fail, cost: 0 ms
+3 fail, cost: 0 ms

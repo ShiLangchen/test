@@ -129,8 +129,10 @@ set(cryptoms_lib_files
     intree.cpp
     searchstats.cpp
     xorfinder.cpp
+    xorextsimplifier.cpp
     cardfinder.cpp
-    cryptominisat_c.cpp
+    anf_to_dimacs.cpp
+
     sls.cpp
     sqlstats.cpp
     vardistgen.cpp
@@ -328,6 +330,7 @@ cmsat_add_public_header(cryptominisat5 ${CMAKE_CURRENT_SOURCE_DIR}/cryptominisat
 cmsat_add_public_header(cryptominisat5 ${CMAKE_CURRENT_SOURCE_DIR}/cryptominisat.h )
 cmsat_add_public_header(cryptominisat5 ${CMAKE_CURRENT_SOURCE_DIR}/solvertypesmini.h )
 cmsat_add_public_header(cryptominisat5 ${CMAKE_CURRENT_SOURCE_DIR}/dimacsparser.h )
+cmsat_add_public_header(cryptominisat5 ${CMAKE_CURRENT_SOURCE_DIR}/anfparser.h )
 cmsat_add_public_header(cryptominisat5 ${CMAKE_CURRENT_SOURCE_DIR}/streambuffer.h )
 
 # -----------------------------------------------------------------------------
@@ -389,6 +392,7 @@ else()
     add_executable(cryptominisat5_simple-bin
         main_simple.cpp
         main_common.cpp
+        xorextsimplifier.cpp
     )
 endif()
 

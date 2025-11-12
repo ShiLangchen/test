@@ -1,0 +1,320 @@
+./cryptominisat5 --verb 1 --autodisablegauss 0 --detachxor 1 --xor 0 test24_1.cnf | grep "Total time" >> output.txt
+
+--autodisablegauss 1 test24_1.cnf c Total time (this thread) : 128.89      
+--autodisablegauss 0 test24_1.cnf c Total time (this thread) : 67.35       
+--autodisablegauss 0 --detachxor 1 c Total time (this thread) : 17.03       
+--autodisablegauss 0 --detachxor 1 test24_2.cnf c Total time (this thread) : 103.12      
+--autodisablegauss 0 test24_2.cnf c Total time (this thread) : 135.87      
+--autodisablegauss 0 --detachxor 0 test24_2.cnf c Total time (this thread) : 136.82      
+--autodisablegauss 0 --detachxor 1 --useallmatrixes 1 test24_1.cnf c Total time (this thread) : 18.99       
+--autodisablegauss 0 --detachxor 1 --useallmatrixes 0 test24_1.cnf c Total time (this thread) : 19.98
+--autodisablegauss 0 --detachxor 1 --useallmatrixes 1 test24_2.cnf c Total time (this thread) : 113.71      
+c Total time (this thread) : 377.94      
+--autodisablegauss 0 --detachxor 1 --detachverb 1 test24_1.cnf c Total time (this thread) : 17.32       
+--autodisablegauss 0 --detachxor 1 --detachverb 1 test24_2.cnf c Total time (this thread) : 97.00       
+c Total time (this thread) : 17.56       
+c Total time (this thread) : 98.10       
+c Total time (this thread) : 16.51       
+c Total time (this thread) : 19.73       
+c Total time (this thread) : 19.72       
+c Total time (this thread) : 19.25       
+c Total time (this thread) : 19.25       
+c Total time (this thread) : 19.69       
+c Total time (this thread) : 19.27       
+c Total time (this thread) : 20.18       
+c Total time (this thread) : 57.73       
+c Total time (this thread) : 32.45       
+--xor 0 test24_1.cnf c Total time (this thread) : 170.64      
+c Total time (this thread) : 77.12       
+c Total time (this thread) : 752.00      
+c Total time (this thread) : 1985.91     
+c Total time (this thread) : 898.25      
+c Total time (this thread) : 109.13      
+c Total time (this thread) : 344.15      
+c Total time (this thread) : 2754.44     
+c Total time (this thread) : 1678.77     
+c Total time (this thread) : 1643.29     
+--useallmatrixes 1
+--detachverb 1
+c Total time (this thread) : 29.86       
+c Total time (this thread) : 30.41       
+--restart geom
+--restart glue
+--restart luby
+c Total time (this thread) : 35.88       
+c Total time (this thread) : 42.33       
+c Total time (this thread) : 109.22      
+test24_1.cnf
+test24_2.cnf
+test27_1.cnf
+test27_2.cnf
+test27_3.cnf
+test24.cnf
+c Total time (this thread) : 28.95       
+c Total time (this thread) : 115.00      
+c Total time (this thread) : 136.43      
+c Total time (this thread) : 180.51      
+c Total time (this thread) : 926.29      
+c Total time (this thread) : 938.65
+      
+test24_1.cnf
+test24_2.cnf
+test24.cnf
+test27_1.cnf
+test27_2.cnf
+test27_3.cnf
+c Total time (this thread) : 105.17      
+c Total time (this thread) : 164.61      
+c Total time (this thread) : 367.52      
+c Total time (this thread) : 1030.62     
+c Total time (this thread) : 1034.19     
+c Total time (this thread) : 1864.35     
+c Total time (this thread) : 18.81       
+test24_1.cnf
+c Total time (this thread) : 74.20       
+test24.cnf
+c Total time (this thread) : 113.82      
+test24_2.cnf
+c Total time (this thread) : 8.23        
+c Total time (this thread) : 21.91       
+c Total time (this thread) : 43.08       
+c Total time (this thread) : 19.20       
+c Total time (this thread) : 8.09        
+c Total time (this thread) : 8.02        
+c Total time (this thread) : 8.10        
+c Total time (this thread) : 227.38      
+c Total time (this thread) : 229.32      
+c Total time (this thread) : 137.80      
+c Total time (this thread) : 8.03        
+--branchstr rand
+c Total time (this thread) : 8.48        
+--branchstr vsids+rand
+c Total time (this thread) : 21.88       
+--branchstr vsids
+c Total time (this thread) : 32.45       
+--branchstr vsids+vmtf
+c Total time (this thread) : 42.13       
+--branchstr vmtf
+c Total time (this thread) : 8.97        
+--branchstr vsids+rand
+c Total time (this thread) : 16.26       
+--branchstr vmtf
+c Total time (this thread) : 138.62      
+--branchstr vsids
+c Total time (this thread) : 192.38      
+--branchstr vsids+vmtf
+c Total time (this thread) : 231.25      
+--branchstr rand
+test24.cnf
+c Total time (this thread) : 19.99       
+--branchstr vsids
+c Total time (this thread) : 46.62       
+--branchstr vsids+rand
+c Total time (this thread) : 67.19       
+--branchstr rand
+c Total time (this thread) : 121.94      
+--branchstr vmtf
+c Total time (this thread) : 206.60      
+--branchstr vsids+vmtf
+test27_1.cnf
+c Total time (this thread) : 1615.72     
+--branchstr rand
+c Total time (this thread) : 1839.72     
+--branchstr vsids+vmtf
+c Total time (this thread) : 1971.52     
+--branchstr vsids+rand
+c Total time (this thread) : 2356.38     
+--branchstr vsids
+c Total time (this thread) : 4795.65     
+--branchstr vmtf
+c Total time (this thread) : 88.25       
+c Total time (this thread) : 88.21       
+test27_2.cnf
+c Total time (this thread) : 128.56      
+--branchstr vmtf
+c Total time (this thread) : 725.40      
+--branchstr vmtf+vsids
+c Total time (this thread) : 728.99      
+--branchstr rand
+c Total time (this thread) : 824.89      
+--branchstr vsids
+c Total time (this thread) : 889.11      
+--branchstr vsids+rand
+test27_3.cnf
+c Total time (this thread) : 128.25      
+--branchstr vmtf
+c Total time (this thread) : 727.21      
+--branchstr vmtf+vsids
+c Total time (this thread) : 739.45      
+--branchstr rand
+c Total time (this thread) : 827.88      
+--branchstr vsids
+c Total time (this thread) : 880.21      
+--branchstr vsids+rand
+test24_1.cnf
+c Total time (this thread) : 3.04        
+--branchstr vmtf+vsids+rand
+c Total time (this thread) : 8.32        
+--branchstr rand
+c Total time (this thread) : 8.82        
+--branchstr vsids+rand
+c Total time (this thread) : 19.38       
+--branchstr vmtf+vsids
+c Total time (this thread) : 21.30       
+--branchstr vsids
+c Total time (this thread) : 33.19       
+--branchstr vsids+vmtf
+c Total time (this thread) : 42.33       
+--branchstr vmtf
+c Total time (this thread) : 44.28       
+--branchstr rand+vmtf
+c Total time (this thread) : 67.26       
+--branchstr vmtf+rand
+c Total time (this thread) : 86.32       
+--branchstr rand+vsids
+test24_2.cnf
+c Total time (this thread) : 9.00        
+--branchstr vsids+rand
+c Total time (this thread) : 15.93       
+--branchstr vmtf
+c Total time (this thread) : 77.88       
+--branchstr rand+vsids
+c Total time (this thread) : 112.82      
+--branchstr vmtf+vsids
+c Total time (this thread) : 120.32      
+--branchstr vmtf+vsids+rand
+c Total time (this thread) : 140.61      
+--branchstr vsids
+c Total time (this thread) : 176.99      
+--branchstr rand+vmtf
+c Total time (this thread) : 191.74      
+--branchstr vsids+vmtf
+c Total time (this thread) : 204.84      
+--branchstr vmtf+rand
+c Total time (this thread) : 234.57      
+--branchstr rand
+test24_3.cnf
+c Total time (this thread) : 17.60       
+--branchstr rand+vmtf
+c Total time (this thread) : 19.41       
+--branchstr rand+vsids
+c Total time (this thread) : 20.33       
+--branchstr vsids
+c Total time (this thread) : 47.55       
+--branchstr vsids+rand
+c Total time (this thread) : 65.61       
+--branchstr rand
+c Total time (this thread) : 72.28       
+--branchstr vmtf+vsids
+c Total time (this thread) : 81.41       
+--branchstr vmtf+rand
+c Total time (this thread) : 125.14      
+--branchstr vmtf
+c Total time (this thread) : 206.45      
+--branchstr vsids+vmtf
+c Total time (this thread) : 254.04      
+--branchstr vmtf+vsids+rand
+test27_1.cnf
+c Total time (this thread) : 89.42       
+--branchstr vmtf+vsids
+test30_1.cnf
+c Total time (this thread) : 169.92      
+--branchstr vmtf
+c Total time (this thread) : 2018.86     
+--branchstr vmtf+vsids
+test30_2.cnf
+c Total time (this thread) : 30.38       
+--branchstr vmtf
+c Total time (this thread) : 503.51      
+--branchstr vsids+vmtf
+test30_3.cnf
+c Total time (this thread) : 1.25        
+--branchstr vmtf+vsids+rand
+c Total time (this thread) : 890.90      
+--branchstr vsids+rand
+c Total time (this thread) : 1712.75     
+--branchstr vmtf+vsids
+c Total time (this thread) : 2018.87     
+--branchstr vsids
+test33_1.cnf
+c Total time (this thread) : 2000.01     
+--branchstr vsids+rand
+c Total time (this thread) : 2000.05     
+--branchstr vsids
+c Total time (this thread) : 2000.01     
+--branchstr rand+vmtf
+c Total time (this thread) : 2000.01     
+c Total time (this thread) : 2000.02     
+--branchstr vmtf
+--branchstr vmtf+rand
+c Total time (this thread) : 2000.01     
+--branchstr vsids+vmtf
+c Total time (this thread) : 2000.01     
+--branchstr vmtf+vsids+rand
+c Total time (this thread) : 2000.01     
+--branchstr vmtf+vsids
+c Total time (this thread) : 2000.46     
+--branchstr rand
+c Total time (this thread) : 2000.02     
+--branchstr rand+vsids
+test33_2.cnf
+c Total time (this thread) : 4773.50     
+--branchstr rand
+c Total time (this thread) : 5099.84     
+--branchstr vsids+vmtf
+c Total time (this thread) : 5724.70     
+--branchstr vsids+rand
+test33_3.cnf
+file
+
+c Total time (this thread) : 0.00        
+--branchstr rand+vsids+vmtf
+c Total time (this thread) : 0.00        
+c Total time (this thread) : 0.00        
+--branchstr vsids+vmtf+rand
+c Total time (this thread) : 0.00        
+--branchstr vmtf+vsids+rand
+--branchstr vmtf+rand+vsids
+c Total time (this thread) : 0.00        
+c Total time (this thread) : 0.00        
+--branchstr vsids+rand+vmtf
+--branchstr rand+vmtf+vsids
+
+c Total time (this thread) : 0.00        
+c Total time (this thread) : 0.01        
+c Total time (this thread) : 0.00        
+--branchstr vmtf+rand+vsids
+c Total time (this thread) : 0.00        
+--branchstr vsids+vmtf+rand
+c Total time (this thread) : 0.00        
+c Total time (this thread) : 0.01        
+--branchstr rand+vmtf+vsids
+--branchstr vsids+rand+vmtf
+--branchstr rand+vsids+vmtf
+--branchstr vmtf+vsids+rand
+test30_3.cnf
+c Total time (this thread) : 1.23        
+--branchstr vmtf+vsids+rand
+test30_3.cnf
+c Total time (this thread) : 1.22        
+--branchstr vmtf+vsids+rand
+c Total time (this thread) : 174.37      
+--branchstr rand+vsids+vmtf
+c Total time (this thread) : 1418.10     
+--branchstr vsids+vmtf+rand
+test30_2.cnf
+c Total time (this thread) : 432.01      
+--branchstr vsids+rand+vmtf
+test30_1.cnf
+c Total time (this thread) : 193.72      
+--branchstr rand+vmtf+vsids
+c Total time (this thread) : 1704.20     
+--branchstr vmtf+rand+vsids
+c Total time (this thread) : 1849.63     
+--branchstr rand+vsids+vmtf
+c Total time (this thread) : 2000.01     
+--branchstr vsids+rand+vmtf
+c Total time (this thread) : 2000.01     
+--branchstr vmtf+vsids+rand
+c Total time (this thread) : 2000.34     
+--branchstr vsids+vmtf+rand

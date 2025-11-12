@@ -39,6 +39,7 @@ THE SOFTWARE.
 #include "datasync.h"
 #include "reducedb.h"
 #include "watchalgos.h"
+#include "xorextsimplifier.h"
 #include "hasher.h"
 #include "solverconf.h"
 #include "distillerlong.h"
@@ -199,8 +200,15 @@ inline void Searcher::add_lit_to_learnt(
         #endif
 
         switch(branch_strategy) {
-            case branch::vsids:
+            case branch::vsids:          
                 vsids_bump_var_act<inprocess>(var);
+                if(!lit.isorigin){
+                    vsids_bump_var_act<inprocess>(lit.var_map[0]);
+                    // vsids_bump_var_act<inprocess>(outer_to_with_bva_map.at(lit.var_map[0]));
+                    // cout<<"c bump: When bump var "<<var<<", var "<<lit.var_map[0]<<", var "<<lit.var_map[1]<<" also bumped."<<endl;
+                    vsids_bump_var_act<inprocess>(lit.var_map[1]);
+                    // vsids_bump_var_act<inprocess>(outer_to_with_bva_map.at(lit.var_map[1]));
+                }
                 break;
 
             case branch::rand:
@@ -208,6 +216,13 @@ inline void Searcher::add_lit_to_learnt(
 
             case branch::vmtf:
                 implied_by_learnts.push_back(var);
+                if(!lit.isorigin){
+                    implied_by_learnts.push_back(lit.var_map[0]);
+                    // implied_by_learnts.push_back(outer_to_with_bva_map.at(lit.var_map[0]));
+                    // cout<<"c bump_vmtf: When bump var "<<var<<", var "<<lit.var_map[0]<<", var "<<lit.var_map[1]<<" also bumped."<<endl;
+                    implied_by_learnts.push_back(lit.var_map[1]);
+                    // implied_by_learnts.push_back(outer_to_with_bva_map.at(lit.var_map[1]));
+                }
                 break;
         }
     }
@@ -2037,6 +2052,9 @@ void Searcher::print_restart_stats_base() const
     }
 
     cout << " " << std::setw(7) << solver->get_num_free_vars();
+
+    // // todoprint: ��ǰ��ͻorδ��������etc
+    // cout<<endl<<"conflict num: "<<conflict.size()<<" sumRestarts():"<<sumRestarts()
 }
 
 struct MyInvSorter {
@@ -3280,6 +3298,8 @@ void Searcher::cancelUntil(uint32_t blevel)
         for (uint32_t i = 0; i < gmatrices.size(); i++)
             if (gmatrices[i] && !gqueuedata[i].disabled)
                 gmatrices[i]->canceling();
+        
+        solver->undo_ext_until(blevel);
 
         uint32_t i = trail_lim[blevel];
         uint32_t j = i;

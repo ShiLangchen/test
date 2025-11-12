@@ -31,7 +31,6 @@ THE SOFTWARE.
 #include <string>
 #include <algorithm>
 
-#include "constants.h"
 #include "solvertypes.h"
 #include "propengine.h"
 #include "searcher.h"
@@ -75,6 +74,7 @@ class ReduceDB;
 class InTree;
 class BreakID;
 class GetClauseQuery;
+class XorExtSimplifier;
 
 struct SolveStats
 {
@@ -188,6 +188,7 @@ class Solver : public Searcher
         StrImplWImpl* dist_impl_with_impl = NULL;
         CardFinder*            card_finder = NULL;
         GetClauseQuery*        get_clause_query = NULL;
+        XorExtSimplifier*      xor_ext_simplifier = NULL;
 
         SearchStats sumSearchStats;
         PropStats sumPropStats;
@@ -197,6 +198,20 @@ class Solver : public Searcher
         bool fully_enqueue_these(const vector<Lit>& toEnqueue);
         bool fully_enqueue_this(const Lit lit_ID);
         void update_assumptions_after_varreplace();
+        
+        struct ExtUndoLog {
+            uint32_t target;
+            uint32_t old_alias;
+            uint32_t old_degree;
+            int level;
+            
+            ExtUndoLog(uint32_t _target, uint32_t _old_alias, uint32_t _old_degree, int _level)
+                : target(_target), old_alias(_old_alias), old_degree(_old_degree), level(_level) {}
+        };
+        vector<ExtUndoLog> xor_ext_undo;
+        
+        bool process_ext_on_assign(Lit p);
+        void undo_ext_until(int level);
 
         //State load/unload
         string serialize_solution_reconstruction_data() const;
